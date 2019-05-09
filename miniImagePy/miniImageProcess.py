@@ -9,7 +9,7 @@ dataset time in train or test.
 """
 
 
-import os, shutil, sys, pickle
+import os, shutil
 import numpy as np
 import pandas as pd
 from PIL import Image
@@ -21,15 +21,12 @@ from functools import partial
 dataPath = '/home/cheny/DataSet/miniImagenet'
 miniImagePath = dataPath + '/images'
 splitPath = dataPath + '/splits'
-miniImageNpPath = dataPath + '/npdata'
-miniImageNpPath2 = dataPath + '/npdata2'
+miniImageNpPath = dataPath + '/npdata'    # store all class by a folder
+miniImageNpPath2 = dataPath + '/npdata2'  # store each class by a folder
 
 splits = ['train', 'val', 'test']
 
-
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-
-
 
 
 tsfm = tvtsfm.Compose([
@@ -38,6 +35,7 @@ tsfm = tvtsfm.Compose([
     tvtsfm.ToTensor(),
     tvtsfm.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
 ])
+
 
 def preprocess(path, spt='test', tsfms=tsfm):
     name = path.split('.')[0]
@@ -62,6 +60,8 @@ def preprocess2(path, spt='test', tsfms=tsfm):
     shutil.copyfile(imgpath, imgpath2)
 
     return None
+
+
 
 
 

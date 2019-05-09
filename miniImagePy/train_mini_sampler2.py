@@ -143,12 +143,10 @@ if __name__ == '__main__':
     parser.add_argument('--save-path', type=str, default='./saved/')
 
 
-    # args = vars(parser.parse_args())
-    # print(args)
 
     args = parser.parse_args()
+    print(vars(args), '\n\n')
+
     run(args)
-
-
 
 

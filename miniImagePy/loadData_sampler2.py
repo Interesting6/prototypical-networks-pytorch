@@ -2,6 +2,12 @@
 # -*- coding:utf-8 -*-
 # Author: Treamy
 
+"""
+sampler in each class a folder way
+"""
+
+
+
 import os
 import numpy as np
 import pandas as pd
@@ -70,7 +76,7 @@ class tasksSampler(object):
                             + self.n_eachClass * i for i in select_class ]
             select_example = torch.tensor(select_example)#.view(-1)
             yield select_example
-            # 返回n_way, (n_spt+n_qry)个样本的索引
+            # 返回[n_way, (n_spt+n_qry)]个样本的索引
 
 
 def loadDL(req_st='train', n_tasks=32, n_way=5, n_sq=16):

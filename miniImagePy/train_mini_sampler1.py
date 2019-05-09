@@ -11,7 +11,7 @@ import os
 import torch
 import numpy as np
 # from nWay_kShot import loadDL
-from loadData import load_ds_dl
+from loadData_sampler1 import load_ds_dl
 from ProtoNet import embedding_map, myProtoNet, get_model
 from torch import optim
 import argparse
@@ -144,10 +144,9 @@ if __name__ == '__main__':
     parser.add_argument('--save-path', type=str, default='./saved_train_mini/')
 
 
-    # args = vars(parser.parse_args())
-    # print(args)
-
     args = parser.parse_args()
+    print(vars(args), '\n\n')
+
     run(args)
 
 

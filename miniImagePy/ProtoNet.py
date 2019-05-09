@@ -58,8 +58,6 @@ class myProtoNet(nn.Module):
         self.opt = opt
         self.use_cuda = opt.use_cuda
 
-        # self.k_spt = k_spt
-
 
     def loss(self, x, train=True):
         n_way = self.opt.n_way if train else self.opt.n_way_test

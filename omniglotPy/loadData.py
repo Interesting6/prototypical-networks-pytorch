@@ -64,7 +64,6 @@ def load_class_imgs(class_name, ds_name='omniglot', n_support=5, n_query=5):
 
     choosed_inds = torch.randperm(n_class_images)[:(n_support+n_query)]
     choosed_class_imagePaths = map(lambda i:class_imagePaths[i], choosed_inds)
-    # 问题1：思考除了上面这个还有什么简便方法将列表作为列表的索引读取元素
 
     compose_tsfrm = Compose([
         openImage(), rotateImage(int(rot[3:])), resizeImage(), convert2Tensor(),
@@ -73,7 +72,6 @@ def load_class_imgs(class_name, ds_name='omniglot', n_support=5, n_query=5):
 
     images_ts = torch.cat(images, dim=0)
     images_ts = images_ts.unsqueeze(1)
-    # 问题2：思考还有什么简便方法将一个以tensor为元素的列表转化为tensor
 
     return images_ts # (n_spt+n_qry, 1, 28, 28)
 

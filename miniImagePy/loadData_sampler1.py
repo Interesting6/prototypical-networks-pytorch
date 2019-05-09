@@ -2,19 +2,16 @@
 # -*- coding:utf-8 -*-
 # Author: Treamy
 
-import os, glob, time
+"""
+sampler in all class a folder way
+"""
 
+
+import os, glob
 import torch
 from torch.utils.data import DataLoader, Dataset
 import numpy as np
-from PIL import Image
-
-from torchvision.transforms import  Compose
-
-import sys
 import pandas as pd
-# sys.path.append('..')
-# from myutils import openImage, resizeImage, rotateImage, convert2Tensor
 
 
 
@@ -55,7 +52,7 @@ def read_ds_class(ds_class_path):
     return class_name
 
 
-def load_class_imgs(class_name, ds_name='omniglot', n_support=5, n_query=5):
+def load_class_imgs(class_name, ds_name, n_support=5, n_query=5):
 
     image_dir = os.path.join(npImagePath.format(ds_name, class_name), )
     class_imagePaths = sorted(glob.glob(os.path.join(image_dir,'*.npy')))
@@ -67,16 +64,15 @@ def load_class_imgs(class_name, ds_name='omniglot', n_support=5, n_query=5):
     choosed_class_imagePaths = map(lambda i:class_imagePaths[i], choosed_inds)
 
     images = tuple(map(load_imgts, choosed_class_imagePaths))
-
     images_ts = torch.stack(images, dim=0)
 
 
-    return images_ts # (n_spt+n_qry, 1, 28, 28)
+    return images_ts # (n_spt+n_qry, 3, 28, 28)
 
 
 
 class loadDataset(Dataset):
-    def __init__(self, ds_name='omniglot', req_dataset='train', n_support=5, n_query=5 ):
+    def __init__(self, ds_name, req_dataset='train', n_support=5, n_query=5 ):
         self.ds_name = ds_name
         self.req_ds = req_dataset
         self.class_path = SplitDataPath.format(ds_name) + req_dataset + '.csv'

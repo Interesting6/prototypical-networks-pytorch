@@ -43,6 +43,7 @@ def run(args):
     save_path = args.save_path
     lr = args.learning_rate
     step_size = args.step_size
+    name_ = str(n_way) + 'way-' + str(k_spt) + 'shot-'
 
     if use_cuda:
         torch.cuda.manual_seed(0)
@@ -58,7 +59,8 @@ def run(args):
     trlog = {
         'train_loss': [], 'train_acc': [],
         'val_loss': [], 'val_acc': [],
-        'min_loss': np.inf
+        'min_loss': np.inf,
+        'max_acc': 0.0
     }
 
     train_dl = loadDL('train', n_episodes, n_way, k_spt + k_qry, )
@@ -105,6 +107,15 @@ def run(args):
             if use_cuda:
                 model.cpu()
             torch.save(model.state_dict(), os.path.join(save_path, 'min-loss' + '.pth'))
+            if use_cuda:
+                model.cuda()
+            wait = 0
+        elif vc_a > trlog['max_acc']:
+            trlog['max_acc'] = vc_a
+            print("==> best accurate model (acc = {:0.2f}), saving model...\n".format(trlog['max_acc']))
+            if use_cuda:
+                model.cpu()
+            torch.save(model.state_dict(), os.path.join(save_path, name_ + 'max-acc' + '.pth'))
             if use_cuda:
                 model.cuda()
             wait = 0

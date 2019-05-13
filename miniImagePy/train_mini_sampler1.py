@@ -44,6 +44,7 @@ def run(args):
     save_path = args.save_path
     lr = args.learning_rate
     step_size = args.step_size
+    name_ = str(n_way) + 'way-' + str(k_spt) + 'shot-'
 
     if use_cuda:
         torch.cuda.manual_seed(0)
@@ -106,7 +107,7 @@ def run(args):
             print("==> best loss model (loss = {:0.6f}), saving model...\n".format(trlog['min_loss']))
             if use_cuda:
                 model.cpu()
-            torch.save(model.state_dict(), os.path.join(save_path, 'min-loss' + '.pth'))
+            torch.save(model.state_dict(), os.path.join(save_path, name_+'min-loss' + '.pth'))
             if use_cuda:
                 model.cuda()
             wait = 0

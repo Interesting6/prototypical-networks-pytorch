@@ -64,8 +64,8 @@ def run(args):
         'max_acc': 0.0
     }
 
-    train_dl = load_ds_dl('miniImagenet','train',n_way, n_episodes, k_spt, k_qry, )
-    val_dl = load_ds_dl('miniImagenet','val', n_way_test, n_episodes_test, k_spt, k_qry)
+    train_dl = load_ds_dl('miniImagenet','train', n_episodes, n_way, k_spt, k_qry, )
+    val_dl = load_ds_dl('miniImagenet','val', n_episodes_test, n_way_test, k_spt, k_qry)
 
     state = True
     epoch = 0
@@ -149,7 +149,7 @@ if __name__ == '__main__':
     parser.add_argument('--n-way-test', type=int, default=5)
     parser.add_argument('--k-spt', type=int, default=5)
     parser.add_argument('--k-qry', type=int, default=15)
-    parser.add_argument('--patience', type=int, default=120)
+    parser.add_argument('--patience', type=int, default=200)
     parser.add_argument('--use-cuda', type=int, default=0)
     parser.add_argument('--learning-rate', type=float, default=0.001)
     parser.add_argument('--step-size', type=int, default=20)

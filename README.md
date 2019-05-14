@@ -53,7 +53,7 @@ File structure:
 Our model realized:
 * On miniImagenet dataset with 30-way 
   * 1-shot: 47.01% (49.42% in paper)  the best model was stored in .saved/min-loss.pth
-  * 5-shot: 59.82% (68.20% in paper)  the best model was stored in .saved_train_mini/min-loss.pth
+  * 5-shot: 61.07% (68.20% in paper)  the best model was stored in .saved_train_mini/min-loss.pth
   
   
 

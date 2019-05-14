@@ -28,10 +28,10 @@ def load_imgts(path):
 # episode的batch采样器
 class EpisodicBatchSampler(object):
     # 采样n_episodes个episode
-    def __init__(self, n_total_class, n_way, n_episodes):
-        self.n_total_class = n_total_class
-        self.n_way = n_way
+    def __init__(self, n_all_class, n_episodes, n_way):
+        self.n_total_class = n_all_class
         self.n_episodes = n_episodes # num of episodes
+        self.n_way = n_way
 
     def __len__(self):
         return self.n_episodes
@@ -43,8 +43,6 @@ class EpisodicBatchSampler(object):
             yield choosed_classes
 
 
-
-
 def read_ds_class(ds_class_path):
     # 读入training set或test set所有类的名字
     split_csv = pd.read_csv(ds_class_path)
@@ -52,18 +50,16 @@ def read_ds_class(ds_class_path):
     return class_name
 
 
+
 def load_class_imgs(class_name, ds_name, n_support=5, n_query=5):
-
     image_dir = os.path.join(npImagePath.format(ds_name, class_name), )
-    class_imagePaths = sorted(glob.glob(os.path.join(image_dir,'*.npy')))
-    n_class_images = len(class_imagePaths)
-    if len(class_imagePaths) == 0:
-        raise Exception("No images found in class {}".format(class_name))
+    imagePaths = sorted(glob.glob(os.path.join(image_dir,'*.npy'))) # 一类中所有图片的路径
+    n_images = len(imagePaths)  # 该类中所含图片样本数量
 
-    choosed_inds = torch.randperm(n_class_images)[:(n_support+n_query)]
-    choosed_class_imagePaths = map(lambda i:class_imagePaths[i], choosed_inds)
+    choosed_inds = torch.randperm(n_images)[:(n_support+n_query)]  # 一类选择的spt与qry集样本的index
+    choosed_imagePaths = map(lambda i:imagePaths[i], choosed_inds) # 一类选择的spt与qry集样本的路径
 
-    images = tuple(map(load_imgts, choosed_class_imagePaths))
+    images = tuple(map(load_imgts, choosed_imagePaths))
     images_ts = torch.stack(images, dim=0)
 
 
@@ -91,7 +87,7 @@ class loadDataset(Dataset):
 
 
 
-def load_ds_dl(ds_name='omniglot', req_dataset='train', n_way=60, n_episodes=100,
+def load_ds_dl(ds_name, req_dataset='train', n_episodes=100, n_way=60,
                n_support=5, n_query=5):
     dataset = loadDataset(ds_name, req_dataset, n_support, n_query)
     n_class = len(dataset)

@@ -1,33 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff75bde4-4369-4b17-939f-6ba92bd143ac" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/miniImagePy/loadMiniData.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniImagePy/miniImage_train.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniImagePy/miniImage_train_cuda.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniImagePy/train.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniImagePy/train_cuda.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/miniImagePy/train_noparse.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myutils.py" beforeDir="false" afterPath="$PROJECT_DIR$/myutils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omniglotPy/ProtoNet.py" beforeDir="false" afterPath="$PROJECT_DIR$/omniglotPy/ProtoNet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omniglotPy/loadData.py" beforeDir="false" afterPath="$PROJECT_DIR$/omniglotPy/loadData.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/save/mini-models/trlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleMini/ProtoNet.py" beforeDir="false" afterPath="$PROJECT_DIR$/miniImagePy/ProtoNet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleMini/loadData.py" beforeDir="false" afterPath="$PROJECT_DIR$/miniImagePy/loadData_sampler1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleMini/loadData_sampler2.py" beforeDir="false" afterPath="$PROJECT_DIR$/miniImagePy/loadData_sampler2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleMini/miniImageProcess.py" beforeDir="false" afterPath="$PROJECT_DIR$/miniImagePy/miniImageProcess.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleMini/nohup.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleMini/nohup_5shot.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleMini/saved/epoch-last.pth" beforeDir="false" afterPath="$PROJECT_DIR$/miniImagePy/saved/epoch-last.pth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleMini/saved/min-loss.pth" beforeDir="false" afterPath="$PROJECT_DIR$/miniImagePy/saved/min-loss.pth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleMini/saved/trlog" beforeDir="false" afterPath="$PROJECT_DIR$/miniImagePy/saved/trlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleMini/saved_train_mini/epoch-last.pth" beforeDir="false" afterPath="$PROJECT_DIR$/miniImagePy/saved_train_mini/epoch-last.pth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleMini/saved_train_mini/min-loss.pth" beforeDir="false" afterPath="$PROJECT_DIR$/miniImagePy/saved_train_mini/min-loss.pth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleMini/saved_train_mini/trlog" beforeDir="false" afterPath="$PROJECT_DIR$/miniImagePy/saved_train_mini/trlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleMini/train_mini.py" beforeDir="false" afterPath="$PROJECT_DIR$/miniImagePy/train_mini_sampler1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleMini/train_mini_.out" beforeDir="false" afterPath="$PROJECT_DIR$/miniImagePy/train_mini_sampler1_.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleMini/train_mini_sampler2.py" beforeDir="false" afterPath="$PROJECT_DIR$/miniImagePy/train_mini_sampler2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleMini/train_mini_sampler2_.out" beforeDir="false" afterPath="$PROJECT_DIR$/miniImagePy/train_mini_sampler2_.out" afterDir="false" />
+    <list default="true" id="ff75bde4-4369-4b17-939f-6ba92bd143ac" name="Default Changelist" comment="update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniImagePy/train_mini_sampler1.py" beforeDir="false" afterPath="$PROJECT_DIR$/miniImagePy/train_mini_sampler1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniImagePy/train_mini_sampler2.py" beforeDir="false" afterPath="$PROJECT_DIR$/miniImagePy/train_mini_sampler2.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,8 +16,10 @@
     <session id="2012787891">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -58,27 +37,24 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="19" />
-          <entry key="py" value="226" />
+          <entry key="py" value="265" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="19" />
-          <entry key="Python" value="226" />
+          <entry key="Python" value="265" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/miniImagePy/miniImageProcess.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-              <folding>
-                <element signature="e#296#314#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="638">
+              <caret line="35" column="15" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -86,8 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/miniImagePy/ProtoNet.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="81" column="20" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="20" />
+            <state relative-caret-position="1562">
+              <caret line="71" column="31" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
               <folding>
                 <element signature="e#64#76#0" expanded="true" />
               </folding>
@@ -95,41 +71,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/myutils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/miniImagePy/loadData_sampler1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-              <folding>
-                <element signature="e#63#84#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1012">
+              <caret line="50" column="42" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/miniImagePy/loadData_sampler2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-487">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/miniImagePy/train_mini_sampler1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4">
-              <caret line="123" column="18" selection-start-line="123" selection-start-column="18" selection-end-line="123" selection-end-column="18" />
+            <state relative-caret-position="522">
+              <caret line="129" column="76" selection-start-line="129" selection-end-line="130" />
               <folding>
                 <element signature="e#127#136#0" expanded="true" />
               </folding>
@@ -140,8 +95,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/miniImagePy/train_mini_sampler2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="139" column="58" selection-start-line="139" selection-start-column="58" selection-end-line="139" selection-end-column="58" />
+            <state relative-caret-position="445">
+              <caret line="124" column="62" lean-forward="true" selection-start-line="124" selection-start-column="62" selection-end-line="124" selection-end-column="62" />
               <folding>
                 <element signature="e#127#136#0" expanded="true" />
               </folding>
@@ -167,6 +122,8 @@
         <option value="$PROJECT_DIR$/simpleMini/miniImageProcess.py" />
         <option value="$PROJECT_DIR$/MiniImagePy/ProtoNet.py" />
         <option value="$PROJECT_DIR$/myutils.py" />
+        <option value="$PROJECT_DIR$/miniImagePy/train_mini_sampler2.py" />
+        <option value="$PROJECT_DIR$/miniImagePy/train_mini_sampler1.py" />
       </list>
     </option>
   </component>
@@ -176,7 +133,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -192,6 +149,16 @@
             <path>
               <item name="prototypical-networks-pytorch" type="b2602c69:ProjectViewProjectNode" />
               <item name="prototypical-networks-pytorch" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="prototypical-networks-pytorch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="prototypical-networks-pytorch" type="462c0819:PsiDirectoryNode" />
+              <item name="miniImagePy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="prototypical-networks-pytorch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="prototypical-networks-pytorch" type="462c0819:PsiDirectoryNode" />
+              <item name="omniglotPy" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -229,21 +196,30 @@
       <option name="presentableId" value="Default" />
       <updated>1557383104071</updated>
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <created>1557753352790</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1557753352790</updated>
+    </task>
+    <task id="LOCAL-00002" summary="update">
+      <created>1557753367602</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1557753367602</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="828" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15164521" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13447782" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -251,12 +227,18 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Remote Host" />
-      <window_info anchor="right" id="SciView" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Python Console" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="3" />
+      <window_info anchor="right" id="SciView" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,6 +246,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -291,51 +277,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
           <caret line="58" column="36" lean-forward="true" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
-          <folding>
-            <element signature="e#64#76#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/omniglotPy/nWay_kShot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/omniglotPy/nWay_kShot.py" />
     <entry file="file://$PROJECT_DIR$/omniglotPy/loadData.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="21" column="8" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-          <folding>
-            <element signature="e#63#84#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simpleMini/nohup_5shot.out">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="43419" column="22" lean-forward="true" selection-start-line="43419" selection-start-column="22" selection-end-line="43419" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simpleMini/nohup.out">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-776043" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miniImagePy/loadData_sampler1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#63#84#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/simpleMini/nohup_5shot.out" />
+    <entry file="file://$PROJECT_DIR$/simpleMini/nohup.out" />
     <entry file="file://$PROJECT_DIR$/miniImagePy/train_mini_sampler1_.out">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="648">
@@ -357,50 +311,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/miniImagePy/train_mini_sampler1.py">
+    <entry file="file://$PROJECT_DIR$/myutils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4">
-          <caret line="123" column="18" selection-start-line="123" selection-start-column="18" selection-end-line="123" selection-end-column="18" />
-          <folding>
-            <element signature="e#127#136#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miniImagePy/train_mini_sampler2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="139" column="58" selection-start-line="139" selection-start-column="58" selection-end-line="139" selection-end-column="58" />
-          <folding>
-            <element signature="e#127#136#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="491">
+          <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/miniImagePy/miniImageProcess.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="e#296#314#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="638">
+          <caret line="35" column="15" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/miniImagePy/ProtoNet.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="81" column="20" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="20" />
+        <state relative-caret-position="1562">
+          <caret line="71" column="31" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
           <folding>
             <element signature="e#64#76#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myutils.py">
+    <entry file="file://$PROJECT_DIR$/miniImagePy/loadData_sampler1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
+        <state relative-caret-position="1012">
+          <caret line="50" column="42" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniImagePy/train_mini_sampler2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="124" column="62" lean-forward="true" selection-start-line="124" selection-start-column="62" selection-end-line="124" selection-end-column="62" />
+          <folding>
+            <element signature="e#127#136#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniImagePy/train_mini_sampler1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="129" column="76" selection-start-line="129" selection-end-line="130" />
+          <folding>
+            <element signature="e#127#136#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

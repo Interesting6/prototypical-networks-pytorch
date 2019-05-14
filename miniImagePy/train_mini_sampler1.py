@@ -123,14 +123,15 @@ def run(args):
         else:
             wait += 1
 
-        torch.save(trlog, os.path.join(save_path, 'trlog'))
+        torch.save(trlog, os.path.join(save_path, name_+'trlog'))
 
         if wait > patience:
             print("==> patience {:d} exceeded\n".format(patience))
+            print("best loss={:0.6f}, best accuracy={:0.2f}".format(trlog['min_loss'], trlog['max_acc']))
             state = False
             if use_cuda:
                 model.cpu()
-            torch.save(model.state_dict(), os.path.join(save_path, 'epoch-last' + '.pth'))
+            torch.save(model.state_dict(), os.path.join(save_path, name_+'epoch-last' + '.pth'))
 
         epoch += 1
 
@@ -152,7 +153,7 @@ if __name__ == '__main__':
     parser.add_argument('--use-cuda', type=int, default=0)
     parser.add_argument('--learning-rate', type=float, default=0.001)
     parser.add_argument('--step-size', type=int, default=20)
-    parser.add_argument('--save-path', type=str, default='./saved_train_mini/')
+    parser.add_argument('--save-path', type=str, default='./saved_sampler1/')
 
 
     args = parser.parse_args()
